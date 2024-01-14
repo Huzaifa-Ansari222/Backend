@@ -59,12 +59,13 @@ function calculateMul(counter){
 
 //req and response
 // app.get('/sum', (req, res) => {
-    app.post('/sum', (req, res) => { //route and callback function
+    app.get('/sum', (req, res) => { //route and callback function
     // var counter = req.query.counter; //for query param
     // console.log(req.body);//
     // console.log(req.headers);
     // var counter = req.headers.counter; //for header
-    var counter = req.body.counter;
+    // var counter = req.body.counter;
+    var counter =req.query.counter;
     
     // if (counter < 100000){
     var calculatedSum=calculateSum(counter);// input
