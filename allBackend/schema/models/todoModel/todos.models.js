@@ -12,7 +12,7 @@ const todoSchema =new mongoose.Schema({
     createdBy:{
         type: mongoose.Schema.Types.ObjectId, //for ref
         ref: "User"
-    }
+    },
     subTodos: [
         {
             type: mongoose.Schema.Types.ObjectId,

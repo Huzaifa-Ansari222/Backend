@@ -9,8 +9,8 @@ const subTodoSchema = new mongoose.Schema({
         type: Boolean,
         default: false
     }
-    createdBy{
-        tyep: mongoose.Schema.Types.ObjectId,
+    createdBy :{
+        type: mongoose.Schema.Types.ObjectId,
         ref:"User"
     }
 },{timestamps: true});
